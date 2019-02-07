@@ -14,7 +14,7 @@ public class Category {
     private int id;
 
     @NotNull
-    @Size(min = 3, max = 15)
+    @Size(min = 3, max = 50)
     private String name;
 
     @OneToMany // Tells Hibernate that you want it to store these cheeses as a one to many relationship

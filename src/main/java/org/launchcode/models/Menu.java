@@ -16,7 +16,7 @@ public class Menu {
     private int id;
 
     @NotNull
-    @Size(min=3, max=15)
+    @Size(min=3, max=50)
     private String name;
 
     @ManyToMany // Says that this class menu is related to the cheese class by a Many to Many relationship, and this collection should be one part of that map.

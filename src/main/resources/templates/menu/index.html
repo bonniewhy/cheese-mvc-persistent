@@ -7,8 +7,8 @@
 
 <nav th:replace="fragments :: navigation"></nav>
 
-<ul>
-    <li th:each="menu : ${menus}">
+<ul class="list-group">
+    <li th:each="menu : ${menus}" class="list-group-item">
         <a th:href="'/menu/view/' + ${menu.id}" th:text="${menu.name}"></a>
     </li>
 </ul>
